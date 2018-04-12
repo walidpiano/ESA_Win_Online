@@ -1,0 +1,60 @@
+create table tblCourseCategories
+(
+ID int,
+Category nvarchar(20)
+);
+
+
+create table tblCoursePlaces
+(
+ID bigint,
+CoursePlace nvarchar(50)
+);
+
+create table tblESAPoint
+(
+ID bigint,
+PointName nvarchar(100)
+);
+
+create table tblCourses
+(
+ID bigint,
+CourseName nvarchar(100),
+CourseCategory int
+);
+
+create table tblInstructors
+(
+ID bigint,
+Name nvarchar(130)
+);
+
+create table tblInstructorCourses
+(
+Instructor bigint,
+Course bigint
+);
+
+create table tblCountry
+(
+ID bigint,
+Country nvarchar(100)
+);
+
+
+create table tblState
+(
+ID bigint,
+Country bigint,
+StateName nvarchar(100)
+);
+
+create table tblCity
+ (
+ ID bigint,
+ StateID bigint,
+ CityName nvarchar(200),
+ ZIPCode nvarchar(12)
+ );
+
